@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #c0c2cf, #242730);
+  z-index: -1;
+}
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: azure;
+  align-items: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 24px;
+}
+.hamburger {
+  justify-self: end;
+}
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.car {
+  height: 80%;
+  width: 80%;
+}
+.car img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.headline {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  font-size: 80px;
+  transform: translate(-20%, -70%);
+  color: #d7d9e7;
+}
